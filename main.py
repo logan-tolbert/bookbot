@@ -1,10 +1,8 @@
 def main():
     with open("books/frankenstein.txt") as f:
         contents = f.read()
-        print(f"Word Count: {count_words(contents)}")
-        print(f"Character Occurences: {count_char_occurence(contents)}")
+        generate_report(contents)
         
-
 def count_words(text):
     return len(text.split())
 
@@ -17,5 +15,13 @@ def count_char_occurence(text):
             char_count[char] += 1
     return char_count
 
+def generate_report(text):
+    print("--- Begin report of books/frankenstein.txt ---")
+    print(f"{count_words(text)} words found in the document")
+    print()
+    for char, count in count_char_occurence(text).items():
+        print(f"The '{char}' was found {count} times")
+    print("--- End report ---")
+    
 if __name__ == "__main__":  
     main()
