@@ -24,7 +24,7 @@ def generate_report(text):
     print("--- Begin report of books/frankenstein.txt ---")
     print(f"{count_words(text)} words found in the document")
     print()
-    for char, count in count_char_occurrence(text).items():
+    for char, count in count_alphabetic_chars(text).items():
         print(f"The '{char}' was found {count} times")
     print("--- End report ---")
     
