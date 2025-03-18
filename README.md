@@ -1,7 +1,7 @@
 # bookbot
 Guided project from boot.dev
 
-BookBot is my first project from boot.dev!
+BookBot is my first [Boot.dev](https://www.boot.dev) project!
 
 
 This program analyzes the contents of a text file (.txt) to provide a detailed character count report. The report includes:
